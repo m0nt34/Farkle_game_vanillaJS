@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: grid;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background: #0d1117;
+}
+.hotDiceScreen {
+    opacity: 0;
+}
+.hotDiceScreen.show {
+    opacity: 1;
+    width: 123px;
+    transform: translateX(140%);
+
+    background: #ff9c9c;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.farkleScreen {
+    opacity: 0;
+}
+.farkleScreen.show {
+    opacity: 1;
+    width: 100px;
+    transform: translateX(185%);
+
+    background: #f84e4e;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.wrapper {
+    background-image: url(dices/table.webp);
+    width: 480px;
+    padding: 12px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 15px;
+    border: solid 4px #0f0f0f;
+}
+.wrapper .game .dices i {
+    font-size: 75px;
+    display: block;
+    user-select: none;
+    cursor: pointer;
+}
+.wrapper .game .dices i.selected {
+    color: #ffc400;
+}
+.wrapper .game .dices {
+    display: flex;
+    user-select: none;
+    justify-content: center;
+}
+.player1,
+.player2 {
+    display: flex;
+    font-size: 20px;
+    width: 25%;
+    border-radius: 8px;
+}
+.player1Wrapper .player1.active {
+    transition: all 0.4s ease;
+
+    background: #fffaf1;
+}
+.player2Wrapper .player2.active {
+    transition: all 0.4s ease;
+    background: #fffaf1;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+}
+.buttons button {
+    cursor: pointer;
+    border: none;
+    background: #ffc400;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+.buttons button:hover {
+    background: #ffd752;
+}
+.player1 {
+    margin-top: 15px;
+}
+.player2 {
+    margin-top: -12px;
+}

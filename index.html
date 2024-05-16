@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farkle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="hotDiceScreen">Hot Dice</div>
+    <div class="farkleScreen">Farkle</div>
+    <div  class="wrapper">
+        
+        <div class="player2Wrapper">
+                <div class="player2">
+                    <i class="uil uil-user"></i>
+                    <span>Player 2</span>
+                </div>
+            <div class="pl2Score">score: <span>0</span></div>
+            <div class="bank">bank: <span>0</span></div> 
+        </div>
+    
+    
+        <div class="game">
+                <div class="table">
+                    <div class="dices">
+                        <i data-value="1" class="uil uil-dice-one img1"></i>
+                        <i data-value="2" class="uil uil-dice-two img2"></i>
+                        <i data-value="3" class="uil uil-dice-three img3"></i>
+                        <i data-value="4" class="uil uil-dice-four img4"></i>
+                        <i data-value="5" class="uil uil-dice-five img5"></i>
+                        <i data-value="6" class="uil uil-dice-six img6"></i>
+                    </div>
+                    <div class="buttons">
+                        <button class="roll">Roll The Dice</button>
+                        <button class="bankScore">Bank Score</button>
+                    </div>
+                </div>
+            </div>
+            <div class="player1Wrapper">
+                    <div class="player1 active">
+                        <i class="uil uil-user"></i>
+                        <span>Player 1</span>
+                    </div>
+                <div class="pl1Score">score: <span>0</span></div>
+                <div class="bank">bank: <span>0</span></div> 
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
